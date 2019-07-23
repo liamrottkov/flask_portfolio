@@ -1,0 +1,28 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+{% extends 'base.html' %}
+
+
+{% block app_content %}
+  <div class="row">
+    <div class="col-md-12 center">
+      <h1>{{ title }}</h1>
+    </div> <!--ends col-->
+  </div> <!-- ends row for title-->
+
+  <div class="row">
+    <div class="col-md-12 center">
+      <p>Contact me using one of the methods below.</p>
+      <p><b>Phone: </b>(207)-671-9259</p>
+      <p><b>Email: </b>liamrottkov@gmail.com</p>
+      <p>Follow me on <a href="https://www.linkedin.com/in/liam-rottkov-63778687/" target="_blank">LinkedIn</a></p>
+      <p>Alternatively, you can send me a message.</p>
+    </div> <!--ends col-->
+  </div> <!-- ends row for cart products table-->
+
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      {{ wtf.quick_form(form) }}
+    </div>
+  </div> <!-- ends row for form-->
+
+{% endblock %}

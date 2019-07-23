@@ -1,0 +1,76 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block title %}
+  Liam Rottkov - {{ title }}
+{% endblock %}
+
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/main.css">
+{% endblock %}
+
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded fixed-top">
+        <a class="navbar-brand" href="{{ url_for('index') }}">Liam Rottkov</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/liam-rottkov-63778687/">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/liamrottkov">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://dashboard.heroku.com/apps/infinite-brushlands-73472">Heroku</a>
+          </li>
+        </ul>
+      </nav>
+    </div> <!--ends col for nav-->
+  </div> <!--ends row for nav-->
+{% endblock %}
+
+
+{% block content %}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <script type="text/javascript">
+          alert(`{{ message }}`);
+        </script>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <main>
+    <div class="container">
+      {% block app_content %}{% endblock %}
+    </div>
+  </main>
+  <footer class="#">
+    <p> Liam Rottkov &copy;2019 </p>
+  </footer>
+
+{% endblock %}
