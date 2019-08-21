@@ -10,4 +10,10 @@ class Config():
 
 
     # uri for sql lite database
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
+
+    # uri for postgres database, connect to local twitter_commerce database we created on pgAdmin
+
+    # 'postgresQL://name_of_user:pass_for_user@domain_address:port/name_of_db'
+
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://postgres:sesame123@localhost:5432/flask_portfolio'
