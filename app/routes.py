@@ -54,6 +54,13 @@ def projects():
             'url': '../static/images/amazon.jpg',
             'source': 'https://github.com/liamrottkov/amazon_login'
         },
+        {
+            'id': 1006,
+            'title': 'Weather Mobile App',
+            'desc': 'Weather App created using React Native',
+            'url': '../static/images/1.jpg',
+            'source': 'https://github.com/liamrottkov/weather_mobile_app'
+        },
     ]
 
 
