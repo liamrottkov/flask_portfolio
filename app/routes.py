@@ -2,6 +2,7 @@ from app import app, db
 from flask import render_template, url_for, redirect, flash
 from app.forms import ContactForm
 from app.models import Contact
+from app.email import sendEmail
 
 
 @app.route('/')
@@ -81,6 +82,8 @@ def contact():
 
         db.session.add(contact)
         db.session.commit()
+
+        sendEmail(form.name.data, form.email.data, form.message.data)
 
         flash("Thanks for contacting me, I will be in touch soon!")
 

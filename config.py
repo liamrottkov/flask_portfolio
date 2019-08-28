@@ -17,3 +17,12 @@ class Config():
     # 'postgresQL://name_of_user:pass_for_user@domain_address:port/name_of_db'
 
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'postgresql://postgres:sesame123@localhost:5432/flask_portfolio'
+
+
+    # setting up all email config variables
+    MAIL_SERVER = 'smtp.googlemail.com'
+    MAIL_PORT = 587
+    MAIL_USE_TLS = 1
+    MAIL_USERNAME = 'liamrottkov@gmail.com'
+    MAIL_PASSWORD = 'orydgtdpafeujccx'
+    ADMINS = ['liamrottkov@gmail.com']
