@@ -21,32 +21,32 @@ def projects():
     products = [
         {
             'id': 1001,
-            'title': 'Hangman',
-            'desc': 'Hangman game created using Python 3.',
-            'url': '../static/images/hangman.jpg',
-            'source': 'https://github.com/liamrottkov/hangman/blob/master/hangman.ipynb'
+            'title': 'eCommerce Website',
+            'desc': 'Created a full-stack eCommerce website that implements ReactJS frontend, Flask backend, SQL database, email support, Stripe payment API, and user authentication. Hosted on Heroku at https://ecommerce-website-frontend.herokuapp.com/ (link located on the NavBar above).',
+            'url': '../static/images/ecommerce.jpg',
+            'source': 'https://github.com/liamrottkov/ecommerce_website_frontend'
         },
         {
             'id': 1002,
-            'title': 'Blackjack',
-            'desc': 'Blackjack game created using Python 3.',
-            'url': '../static/images/blackjack.jpg',
-            'source': 'https://github.com/liamrottkov/blackjack/blob/master/blackjack.ipynb'
+            'title': 'Tic-Tac-Toe mobile',
+            'desc': 'Tic-Tac-Toe mobile game created using React Native',
+            'url': '../static/images/tictac.jpg',
+            'source': 'https://github.com/liamrottkov/tic-tac-toe'
         },
         {
             'id': 1003,
-            'title': 'Twitter E-Commerce Website',
-            'desc': 'Twitter-style social network and E-commerce website created using HTML 5, CSS 3, Boostrap 4, Flask, and Python 3',
-            'url': '../static/images/twitter_commerce.jpg',
-            'source': 'https://github.com/liamrottkov/twitter_commerce'
+            'title': 'Law Site Replica',
+            'desc': 'Law site replica created using HTML, CSS, and Bootstrap',
+            'url': '../static/images/lawsite.jpg',
+            'source': 'https://github.com/liamrottkov/law_site_replica'
 
         },
         {
             'id': 1004,
-            'title': 'Monster Dungeon Game',
-            'desc': 'Monster dungeon game created using Python 3.',
-            'url': '../static/images/monster_dungeon.jpg',
-            'source': 'https://github.com/liamrottkov/monster_dungeon/blob/master/monster_dungeon.ipynb'
+            'title': 'Blackjack',
+            'desc': 'Blackjack game created using Python 3.',
+            'url': '../static/images/blackjack.jpg',
+            'source': 'https://github.com/liamrottkov/blackjack/blob/master/blackjack.ipynb'
         },
         {
             'id': 1005,
@@ -61,6 +61,28 @@ def projects():
             'desc': 'Weather App created using React Native',
             'url': '../static/images/1.jpg',
             'source': 'https://github.com/liamrottkov/weather_mobile_app'
+        },
+        {
+            'id': 1007,
+            'title': 'Hangman',
+            'desc': 'Hangman game created using Python 3.',
+            'url': '../static/images/hangman.jpg',
+            'source': 'https://github.com/liamrottkov/hangman/blob/master/hangman.ipynb'
+        },
+        {
+            'id': 1008,
+            'title': 'Twitter-style social network',
+            'desc': 'Twitter-style social network and eCommerce website created using HTML 5, CSS 3, Boostrap 4, Flask, and Python 3',
+            'url': '../static/images/twitter_commerce.jpg',
+            'source': 'https://github.com/liamrottkov/twitter_commerce'
+
+        },
+        {
+            'id': 1009,
+            'title': 'Monster Dungeon Game',
+            'desc': 'Monster dungeon game created using Python 3.',
+            'url': '../static/images/monster_dungeon.jpg',
+            'source': 'https://github.com/liamrottkov/monster_dungeon/blob/master/monster_dungeon.ipynb'
         },
     ]
 
